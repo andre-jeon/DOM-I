@@ -58,6 +58,7 @@ middleImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mi
 
 
 const container = document.querySelector('.container')
+
 const headerContainer = container.querySelector('header')
 const navHeader = headerContainer.querySelector('nav')
 const aNav = navHeader.querySelectorAll('a')
@@ -69,6 +70,33 @@ aNav[3].textContent = 'Features'
 aNav[4].textContent = 'About'
 aNav[5].textContent = 'Contact'
 
+const mainContent = container.querySelector('.main-content')
+
+const topContent = mainContent.querySelector('.top-content')
+const textContent1 = topContent.querySelector('.text-content')
+
+const textContent1_h4 = textContent1.querySelectorAll('h4')
+const textContent1_p =  textContent1.querySelectorAll('p')
+
+textContent1_h4[0].textContent = 'Features'
+textContent1_h4[1].textContent = 'About'
+
+textContent1_p[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+textContent1_p[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+const bottomContent = mainContent.querySelector('.bottom-content')
+const textContent2 = bottomContent.querySelector('.text-content')
+
+const textContent2_h4 = bottomContent.querySelector('.text-content')
+const textContent2_p = bottomContent.querySelector('.text-content')
+
+textContent2_h4[0].textContent = 'Services'
+textContent2_h4[1].textContent = 'Product'
+textContent2_h4[2].textContent = 'Vision'
+
+textContent1_p[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+textContent1_p[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+textContent1_p[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
 const cTa = document.querySelector('.cta')
 const cTaText = cTa.querySelector('.cta-text')
