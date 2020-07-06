@@ -41,6 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// Create selectors to point your data into elements
+
 const nav = document.querySelector('nav')
 
 const logoImg = document.querySelector('#logo-img')
@@ -52,14 +54,21 @@ ctaImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/heade
 const middleImg = document.querySelector('#middle-img')
 middleImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mid-page-accent.jpg'
 
-nav.textContent = 'Services', 'Product', 'Vision', 'Features', 'About', 'Contact'
+// Update the HTML with the JSON data
 
-const myFooter = document.querySelectorAll('footer')
-const footerContent = document.querySelector('p')
 
-footerContent = 'Copyright Great Idea! 2018'
 
-const myContact = document.querySelectorAll('contact')
-const contact1 = myContact.querySelector('h4')
+const cTa = document.querySelector('.cta')
+const cTaText = cTa.querySelector('.cta-text')
+const cTaTextH1 = cTaText.querySelector('h1')
+const cTaButton = cTaText.querySelector('button')
 
-contact1 = 'Contact'
+cTaTextH1.textContent = 'DOM Is Awesome'
+cTaButton.textContent = 'Get Started'
+
+const myFooter = document.querySelector('footer')
+const footerContent = myFooter.querySelector('p')
+
+footerContent.textContent = 'Copyright Great Idea! 2018'
+
+// Add new content
