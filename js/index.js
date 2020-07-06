@@ -52,3 +52,14 @@ ctaImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/heade
 const middleImg = document.querySelector('#middle-img')
 middleImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mid-page-accent.jpg'
 
+nav.textContent = 'Services'
+'Product'
+'Vision'
+'Features'
+'About'
+'Contact'
+
+const myFooter = document.querySelectorAll('footer')
+const footerContent = footer.querySelector('p')
+
+footerContent = 'Copyright Great Idea! 2018'
