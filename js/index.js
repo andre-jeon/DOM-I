@@ -57,6 +57,18 @@ middleImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mi
 // Update the HTML with the JSON data
 
 
+const container = document.querySelector('.container')
+const headerContainer = container.querySelector('header')
+const navHeader = headerContainer.querySelector('nav')
+const aNav = navHeader.querySelectorAll('a')
+
+aNav[0].textContent = 'Services'
+aNav[1].textContent = 'Product'
+aNav[2].textContent = 'Vision'
+aNav[3].textContent = 'Features'
+aNav[4].textContent = 'About'
+aNav[5].textContent = 'Contact'
+
 
 const cTa = document.querySelector('.cta')
 const cTaText = cTa.querySelector('.cta-text')
