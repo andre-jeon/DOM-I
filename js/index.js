@@ -40,3 +40,15 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const nav = document.querySelector('nav')
+
+const logoImg = document.querySelector('#logo-img')
+logoImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/logo.png'
+
+const ctaImg = document.querySelector('#cta-img')
+ctaImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/header-img.png'
+
+const middleImg = document.querySelector('#middle-img')
+middleImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mid-page-accent.jpg'
+
