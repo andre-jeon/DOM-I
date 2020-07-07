@@ -39,4 +39,87 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('alt', siteContent["nav"]["img-src"])
+logo.setAttribute('src', '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/logo.png')
+
+let ctaLogo = document.getElementById("cta-img");
+ctaLogo.setAttribute('alt', siteContent["cta"]["img-src"])
+ctaLogo.setAttribute('src' ,'/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/header-img.png')
+
+let middlelogo = document.getElementById("middle-img");
+middlelogo.setAttribute('alt', siteContent["main-content"]["middle-img-src"])
+// middlelogo.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mid-page-accent.jpg'
+middlelogo.setAttribute('src', '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mid-page-accent.jpg')
+
+// Create selectors to point your data into elements
+
+const nav = document.querySelector('header nav')
+
+// Update the HTML with the JSON data
+
+let container = document.querySelectorAll('.container header nav a')
+
+for (let i = 0; i <container.length; i++){
+  container[i].style.color = 'green'
+}
+
+container[0].textContent = siteContent["nav"]["nav-item-1"]
+container[1].textContent = siteContent["nav"]["nav-item-2"]
+container[2].textContent = siteContent["nav"]["nav-item-3"]
+container[3].textContent = siteContent["nav"]["nav-item-4"]
+container[4].textContent = siteContent["nav"]["nav-item-5"]
+container[5].textContent = siteContent["nav"]["nav-item-6"]
+
+
+let ctaText = document.querySelector('.cta .cta-text h1')
+ctaText.textContent = siteContent["cta"]["h1"]
+
+let ctaButton = document.querySelector('button')
+ctaButton.textContent = siteContent["cta"]["button"]
+
+
+let textContent1_h4 = document.querySelectorAll('.top-content h4')
+let textContent1_p =  document.querySelectorAll('.top-content p')
+
+textContent1_h4[0].textContent = siteContent["main-content"]["features-h4"]
+textContent1_h4[1].textContent = siteContent["main-content"]["about-h4"]
+
+textContent1_p[0].textContent = siteContent["main-content"]["features-content"]
+textContent1_p[1].textContent = siteContent["main-content"]["about-content"]
+
+
+let textContent2_h4 = document.querySelectorAll('.bottom-content h4')
+let textContent2_p = document.querySelectorAll('.bottom-content p')
+
+textContent2_h4[0].textContent = siteContent["main-content"]["services-h4"]
+textContent2_h4[1].textContent = siteContent["main-content"]["product-h4"]
+textContent2_h4[2].textContent = siteContent["main-content"]["vision-h4"]
+
+textContent2_p[0].textContent = siteContent["main-content"]["services-content"]
+textContent2_p[1].textContent = siteContent["main-content"]["product-content"]
+textContent2_p[2].textContent = siteContent["main-content"]["vision-content"]
+
+
+let myContact_h4 = document.querySelector('.contact h4')
+myContact_h4.textContent = siteContent["contact"]["contact-h4"]
+
+let myContact_p = document.querySelectorAll('.contact p')
+myContact_p[0].textContent = siteContent["contact"]["address"]
+myContact_p[1].textContent = siteContent["contact"]["phone"]
+myContact_p[2].textContent = siteContent["contact"]["email"]
+
+
+document.querySelector('footer p').textContent = siteContent["footer"]["copyright"]
+
+const newA = document.createElement('a')
+newA.textContent = 'Steve'
+newA.style.color = 'red'
+nav.appendChild(newA)
+
+const newB = document.createElement('a')
+newB.textContent = 'Elon'
+newB.style.color = 'pink'
+nav.prepend(newB)
+
+
+// Add new content
