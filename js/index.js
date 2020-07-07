@@ -40,15 +40,16 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('alt', siteContent["nav"]["img-src"])
-logo.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/logo.png'
+logo.setAttribute('src', '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/logo.png')
 
 let ctaLogo = document.getElementById("cta-img");
 ctaLogo.setAttribute('alt', siteContent["cta"]["img-src"])
-ctaLogo.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/header-img.png'
+ctaLogo.setAttribute('src' ,'/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/header-img.png')
 
 let middlelogo = document.getElementById("middle-img");
 middlelogo.setAttribute('alt', siteContent["main-content"]["middle-img-src"])
-middlelogo.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mid-page-accent.jpg'
+// middlelogo.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mid-page-accent.jpg'
+middlelogo.setAttribute('src', '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mid-page-accent.jpg')
 
 // Create selectors to point your data into elements
 
