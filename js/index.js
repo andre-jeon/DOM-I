@@ -70,13 +70,24 @@ aNav[3].textContent = 'Features'
 aNav[4].textContent = 'About'
 aNav[5].textContent = 'Contact'
 
+
+const cTa = document.querySelector('.cta')
+const cTaText = cTa.querySelector('.cta-text')
+const cTaTextH1 = cTaText.querySelector('h1')
+const cTaButton = cTaText.querySelector('button')
+
+cTaTextH1.textContent = 'DOM Is Awesome'
+cTaButton.textContent = 'Get Started'
+
+
 const mainContent = container.querySelector('.main-content')
 
 const topContent = mainContent.querySelector('.top-content')
+
 const textContent1 = topContent.querySelector('.text-content')
 
-const textContent1_h4 = textContent1.querySelectorAll('h4')
-const textContent1_p =  textContent1.querySelectorAll('p')
+const textContent1_h4 = document.querySelectorAll('.top-content h4')
+const textContent1_p =  document.querySelectorAll('.top-content p')
 
 textContent1_h4[0].textContent = 'Features'
 textContent1_h4[1].textContent = 'About'
@@ -87,28 +98,36 @@ textContent1_p[1].textContent = 'About content elementum magna eros, ac posuere 
 const bottomContent = mainContent.querySelector('.bottom-content')
 const textContent2 = bottomContent.querySelector('.text-content')
 
-const textContent2_h4 = bottomContent.querySelector('.text-content')
-const textContent2_p = bottomContent.querySelector('.text-content')
+const textContent2_h4 = document.querySelectorAll('.bottom-content h4')
+const textContent2_p = document.querySelectorAll('.bottom-content p')
 
 textContent2_h4[0].textContent = 'Services'
 textContent2_h4[1].textContent = 'Product'
 textContent2_h4[2].textContent = 'Vision'
 
-textContent1_p[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-textContent1_p[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-textContent1_p[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-
-const cTa = document.querySelector('.cta')
-const cTaText = cTa.querySelector('.cta-text')
-const cTaTextH1 = cTaText.querySelector('h1')
-const cTaButton = cTaText.querySelector('button')
-
-cTaTextH1.textContent = 'DOM Is Awesome'
-cTaButton.textContent = 'Get Started'
+textContent2_p[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+textContent2_p[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+textContent2_p[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
 const myFooter = document.querySelector('footer')
 const footerContent = myFooter.querySelector('p')
 
 footerContent.textContent = 'Copyright Great Idea! 2018'
+
+const myContact = document.querySelector('.contact')
+
+const myContact_h4 = document.querySelector('.contact h4')
+const myContact_p = document.querySelectorAll('.contact p')
+
+
+myContact_h4.textContent = 'Contact'
+
+myContact_p[0].textContent = '123 Way 456 Street Somewhere, USA'
+myContact_p[1].textContent = '1 (888) 888-8888'
+myContact_p[2].textContent = 'sales@greatidea.io'
+
+
+
+
 
 // Add new content
