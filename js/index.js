@@ -52,7 +52,7 @@ middlelogo.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/m
 
 // Create selectors to point your data into elements
 
-const nav = document.querySelector('nav')
+const nav = document.querySelector('header nav')
 
 // Update the HTML with the JSON data
 
@@ -109,5 +109,9 @@ myContact_p[2].textContent = siteContent["contact"]["email"]
 
 
 document.querySelector('footer p').textContent = siteContent["footer"]["copyright"]
+
+let lastA = document.querySelector(nav).appendChild(nav.querySelector('a')).textContent = 'FUCK0'
+// nav.prepend('FUCK1')
+
 
 // Add new content
