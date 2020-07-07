@@ -56,78 +56,54 @@ middleImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mi
 
 // Update the HTML with the JSON data
 
+let container = document.querySelectorAll('.container header nav a')
 
-const container = document.querySelector('.container')
-
-const headerContainer = container.querySelector('header')
-const navHeader = headerContainer.querySelector('nav')
-const aNav = navHeader.querySelectorAll('a')
-
-aNav[0].textContent = 'Services'
-aNav[1].textContent = 'Product'
-aNav[2].textContent = 'Vision'
-aNav[3].textContent = 'Features'
-aNav[4].textContent = 'About'
-aNav[5].textContent = 'Contact'
+container[0].textContent = siteContent["nav"]["nav-item-1"]
+container[1].textContent = siteContent["nav"]["nav-item-2"]
+container[2].textContent = siteContent["nav"]["nav-item-3"]
+container[3].textContent = siteContent["nav"]["nav-item-4"]
+container[4].textContent = siteContent["nav"]["nav-item-5"]
+container[5].textContent = siteContent["nav"]["nav-item-6"]
 
 
-const cTa = document.querySelector('.cta')
-const cTaText = cTa.querySelector('.cta-text')
-const cTaTextH1 = cTaText.querySelector('h1')
-const cTaButton = cTaText.querySelector('button')
+let ctaText = document.querySelector('.cta .cta-text h1')
+ctaText.textContent = siteContent["cta"]["h1"]
 
-cTaTextH1.textContent = 'DOM Is Awesome'
-cTaButton.textContent = 'Get Started'
+let ctaButton = document.querySelector('button')
+ctaButton.textContent = siteContent["cta"]["button"]
 
 
-const mainContent = container.querySelector('.main-content')
+let textContent1_h4 = document.querySelectorAll('.top-content h4')
+let textContent1_p =  document.querySelectorAll('.top-content p')
 
-const topContent = mainContent.querySelector('.top-content')
+textContent1_h4[0].textContent = siteContent["main-content"]["features-h4"]
+textContent1_h4[1].textContent = siteContent["main-content"]["about-h4"]
 
-const textContent1 = topContent.querySelector('.text-content')
-
-const textContent1_h4 = document.querySelectorAll('.top-content h4')
-const textContent1_p =  document.querySelectorAll('.top-content p')
-
-textContent1_h4[0].textContent = 'Features'
-textContent1_h4[1].textContent = 'About'
-
-textContent1_p[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-textContent1_p[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-
-const bottomContent = mainContent.querySelector('.bottom-content')
-const textContent2 = bottomContent.querySelector('.text-content')
-
-const textContent2_h4 = document.querySelectorAll('.bottom-content h4')
-const textContent2_p = document.querySelectorAll('.bottom-content p')
-
-textContent2_h4[0].textContent = 'Services'
-textContent2_h4[1].textContent = 'Product'
-textContent2_h4[2].textContent = 'Vision'
-
-textContent2_p[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-textContent2_p[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-textContent2_p[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-
-const myFooter = document.querySelector('footer')
-const footerContent = myFooter.querySelector('p')
-
-footerContent.textContent = 'Copyright Great Idea! 2018'
-
-const myContact = document.querySelector('.contact')
-
-const myContact_h4 = document.querySelector('.contact h4')
-const myContact_p = document.querySelectorAll('.contact p')
+textContent1_p[0].textContent = siteContent["main-content"]["features-content"]
+textContent1_p[1].textContent = siteContent["main-content"]["about-content"]
 
 
-myContact_h4.textContent = 'Contact'
+let textContent2_h4 = document.querySelectorAll('.bottom-content h4')
+let textContent2_p = document.querySelectorAll('.bottom-content p')
 
-myContact_p[0].textContent = '123 Way 456 Street Somewhere, USA'
-myContact_p[1].textContent = '1 (888) 888-8888'
-myContact_p[2].textContent = 'sales@greatidea.io'
+textContent2_h4[0].textContent = siteContent["main-content"]["services-h4"]
+textContent2_h4[1].textContent = siteContent["main-content"]["product-h4"]
+textContent2_h4[2].textContent = siteContent["main-content"]["vision-h4"]
+
+textContent2_p[0].textContent = siteContent["main-content"]["services-content"]
+textContent2_p[1].textContent = siteContent["main-content"]["product-content"]
+textContent2_p[2].textContent = siteContent["main-content"]["vision-content"]
 
 
+let myContact_h4 = document.querySelector('.contact h4')
+myContact_h4.textContent = siteContent["contact"]["contact-h4"]
+
+let myContact_p = document.querySelectorAll('.contact p')
+myContact_p[0].textContent = siteContent["contact"]["address"]
+myContact_p[1].textContent = siteContent["contact"]["phone"]
+myContact_p[2].textContent = siteContent["contact"]["email"]
 
 
+document.querySelector('footer p').textContent = siteContent["footer"]["copyright"]
 
 // Add new content
