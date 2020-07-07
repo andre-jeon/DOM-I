@@ -54,12 +54,13 @@ middlelogo.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/m
 
 const nav = document.querySelector('nav')
 
-nav.style.color = 'green'
-
-
 // Update the HTML with the JSON data
 
 let container = document.querySelectorAll('.container header nav a')
+
+for (let i = 0; i <container.length; i++){
+  container[i].style.color = 'green'
+}
 
 container[0].textContent = siteContent["nav"]["nav-item-1"]
 container[1].textContent = siteContent["nav"]["nav-item-2"]
