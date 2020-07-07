@@ -113,10 +113,12 @@ document.querySelector('footer p').textContent = siteContent["footer"]["copyrigh
 
 const newA = document.createElement('a')
 newA.textContent = 'Steve'
+newA.style.fontSize = '50px'
 nav.appendChild(newA)
 
 const newB = document.createElement('a')
 newB.textContent = 'Elon'
+newB.style.color = 'pink'
 nav.prepend(newB)
 
 
