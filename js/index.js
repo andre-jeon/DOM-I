@@ -39,20 +39,23 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('alt', siteContent["nav"]["img-src"])
+logo.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/logo.png'
+
+let ctaLogo = document.getElementById("cta-img");
+ctaLogo.setAttribute('alt', siteContent["cta"]["img-src"])
+ctaLogo.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/header-img.png'
+
+let middlelogo = document.getElementById("middle-img");
+middlelogo.setAttribute('alt', siteContent["main-content"]["middle-img-src"])
+middlelogo.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mid-page-accent.jpg'
 
 // Create selectors to point your data into elements
 
 const nav = document.querySelector('nav')
 
-const logoImg = document.querySelector('#logo-img')
-logoImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/logo.png'
+nav.style.color = 'green'
 
-const ctaImg = document.querySelector('#cta-img')
-ctaImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/header-img.png'
-
-const middleImg = document.querySelector('#middle-img')
-middleImg.src = '/Users/andrejeon/Desktop/lambda-school/unit2/week1/DOM-I/img/mid-page-accent.jpg'
 
 // Update the HTML with the JSON data
 
