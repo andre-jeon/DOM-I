@@ -110,8 +110,13 @@ myContact_p[2].textContent = siteContent["contact"]["email"]
 
 document.querySelector('footer p').textContent = siteContent["footer"]["copyright"]
 
-let aP = document.querySelector('header nav').appendChild(document.querySelector('header nav a')).textContent = 'Steve'
-let pP = document.querySelector('header nav').prepend(document.querySelector('header nav a')).textContent = 'Elon'
+const newA = document.createElement('a')
+newA.textContent = 'Steve'
+nav.appendChild(newA)
+
+const newB = document.createElement('a')
+newB.textContent = 'Elon'
+nav.prepend(newB)
 
 
 // Add new content
